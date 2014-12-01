@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#43C01E"
+    android:id="@+id/pueblo_main_page"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.ahous_000.hspprapp.PuebloMainActivity$PlaceholderFragment">
+
+    <!-- Display pueblo title -->
+    <TextView
+        android:text="@string/pueblo_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ExtraLargeFont"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        />
+
+    <!-- Create space between title and first row of buttons -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layoutMode="clipBounds" />
+
+    <!-- Create first row of buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pueblo_top_row"
+        android:weightSum="1"
+        android:layout_weight="0.05">
+
+        <!-- Increase left side padding for button -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.56"/>
+
+        <!-- Place adopt button on left side of top row -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/pueblo_adopt_button"
+            android:text="@string/adopt_button_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@drawable/pueblo_button_highlighting"
+            />
+
+        <!-- Create space between adopt and report lost pets button -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.48"/>
+
+        <!-- Place report lost pets button to the right of the adopt button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lost_button_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/pueblo_lost_button"
+            android:textColor="#000000"
+            android:background="@drawable/pueblo_button_highlighting"/>
+
+        </LinearLayout>
+
+    <!-- Create bottom row of buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pueblo_bottom_row"
+        android:layout_weight="0.2"
+        android:weightSum="1">
+
+        <!-- Increase left side padding for the donate button -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.58"
+            />
+
+        <!-- Place donate button below adopt button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/pueblo_donate_button"
+            android:text="@string/donate_button_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/pueblo_button_highlighting"
+            />
+
+        <!-- Create a space between donate and favorites button -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <!-- Place the favorites button below the report lost pets button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/pueblo_favorites_button"
+            android:textSize="20sp"
+            android:text="@string/favorite_button_text"
+            android:textStyle="bold"
+            android:background="@drawable/pueblo_button_highlighting"/>
+
+        </LinearLayout>
+
+</LinearLayout>
