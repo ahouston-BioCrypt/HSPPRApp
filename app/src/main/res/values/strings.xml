@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Humane Society Pikes Peak Region</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- REGIONS PAGE -->
+    <string name="pick_region">Pick A Region!</string>
+
+    <!-- Button Strings -->
+    <string name="co_springs_region_button_text">Colorado Springs</string>
+    <string name="pueblo_region_button_text">Pueblo</string>
+    <string name="title_activity_springs_main">Springs Animals</string>
+    <string name="adopt_button_text">Adopt \n A \n Pet</string>
+    <string name="lost_button_text">Report \n Lost/Found \n Pets</string>
+    <string name="donate_button_text">Donate</string>
+    <string name="favorite_button_text">View \n Favorites</string>
+
+    <!-- SRINGS_MAIN_PAGE -->
+    <string name="springs_main_title">Colorado Springs</string>
+
+    <!-- Springs Buttons -->
+    <string name="springs_adopt_button">Adopt Button</string>
+    <string name="springs_donate_button">Donate Button</string>
+    <string name="springs_lost_pet_button">Lost/Found Pet</string>
+    <string name="springs_favorites_button">Favorites</string>
+
+
+    <!-- Pueblo Main Page -->
+    <string name="title_activity_pueblo_main_activity">Pueblo Animals</string>
+    <string name="pueblo_main_title">Pueblo</string>
+
+</resources>

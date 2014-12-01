@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahous_000.hspprapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ahous_000.hspprapp.RegionSelectionActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ahous_000.hspprapp.SpringsMainActivity"
+            android:label="@string/title_activity_springs_main"
+            android:parentActivityName="com.example.ahous_000.hspprapp.RegionSelectionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ahous_000.hspprapp.RegionSelectionActivity" />
+        </activity>
+        <activity
+            android:name=".PuebloMainActivity"
+            android:label="@string/title_activity_pueblo_main_activity"
+            android:parentActivityName="com.example.ahous_000.hspprapp.RegionSelectionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ahous_000.hspprapp.RegionSelectionActivity" />
+        </activity>
+    </application>
+
+</manifest>

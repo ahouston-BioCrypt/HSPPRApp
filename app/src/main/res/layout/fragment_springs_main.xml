@@ -1,0 +1,155 @@
+<!-- Align elements vertically across the entire page-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#FF701E"
+    tools:context="com.example.ahous_000.hspprapp.SpringsMainActivity$PlaceholderFragment">
+
+    <!-- Create Title of the page-->
+    <TextView
+        android:text="@string/springs_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TitleFont"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        />
+
+    <!-- Create a Space between title and 2X2 Grid of Buttons-->
+    <!--<Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.25"
+        />-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8">
+
+        </Space>
+
+    <!-- Create a horizontal organization of the buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/top_row"
+        android:weightSum="1">
+
+        <!--Create additional padding on the left hand side of the screen-->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+        <!-- Adopt Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/springs_adopt_button"
+            android:background="@drawable/springs_button_highlighting"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/adopt_button_text"
+            android:id="@+id/springs_adopt_button"
+            android:gravity="center"
+            android:textStyle="bold">
+
+            </Button>
+
+        <!-- Create space on row between the buttons-->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <!-- Report Lost/Found Pets Button-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/springs_lost_pet_button"
+            android:background="@drawable/springs_button_highlighting"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/lost_button_text"
+            android:id="@+id/springs_lost_button"
+            android:gravity="center"
+            android:textStyle="bold"
+            >
+
+            </Button>
+
+    </LinearLayout>
+
+    <!-- Create second row of buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:id="@+id/springs_bottom_row"
+        android:layout_margin="16dp"
+        android:weightSum="1"
+        >
+
+        <!-- Create similar padding on left of screen like top row -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+        <!-- Create Donate Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/springs_donate_button"
+            android:layout_gravity="center"
+            android:contentDescription="@string/springs_donate_button"
+            android:background="@drawable/springs_button_highlighting"
+            android:text="@string/donate_button_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <!-- Space between buttons in bottom row -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+
+        <!-- Create Favorites View Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@drawable/springs_button_highlighting"
+            android:id="@+id/springs_favorites_button"
+            android:layout_gravity="center"
+            android:contentDescription="@string/springs_favorites_button"
+            android:text="@string/favorite_button_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

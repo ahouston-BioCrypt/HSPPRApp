@@ -1,0 +1,81 @@
+   <!-- Create the activity with each element aligned vertically down the entire screen-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#492008"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        
+            <!-- Create a space between the top of the screen and the text view-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height= "match_parent"
+                android:layout_weight="0.5"
+                />
+
+            <!-- Create "Pick Region Text View-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:typeface="serif"
+                android:textStyle="italic"
+                android:text="@string/pick_region"
+                android:textAppearance="@style/ExtraLargeFont"
+                android:layout_weight="0"
+                />
+
+            <!-- Create a space between the text and the first button-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                />
+
+            <!-- Create a button for the Colorado Springs Region-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/co_springs_region_button_text"
+                android:singleLine="false"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textAppearance="@style/RegionButtonFont"
+                android:background="@drawable/region_button_springs_highlighting"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/springs_button"
+                />
+
+            <!-- Create a space between the springs and pueblo buttons-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.32"
+                />
+
+            <!-- Create Pueblo Region button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/pueblo_region_button_text"
+                android:singleLine="false"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textAppearance="@style/RegionButtonFont"
+                android:background="@drawable/region_button_pueblo_highlighting"
+                android:textColor="#FFFFFF"
+                android:typeface="serif"
+                android:id="@+id/pueblo_button" />
+
+        </LinearLayout>
+

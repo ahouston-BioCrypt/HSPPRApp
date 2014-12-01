@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="actionBarStyle"
+        parent="android:Widget.ActionBar">
+
+        <!-- Make a divided action bar-->
+        <item name="android:divider">#00000000</item>
+
+        <!-- Set and use logo-->
+        <item name="android:logo">@drawable/app_logo</item>
+        <item name="android:displayOptions">useLogo</item>
+        </style>
+</resources>

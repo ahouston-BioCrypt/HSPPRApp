@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ExtraLargeFont"
+        parent="android:TextAppearance.Large">
+        <item name="android:textSize"> 50sp</item>
+        </style>
+    <style name="RegionButtonFont"
+        parent="android:TextAppearance.Large">
+        <item name="android:textSize"> 48sp </item>
+        </style>
+    <style name="TitleFont"
+        parent="android:TextAppearance.Large">
+        <item name="android:textSize">40sp</item>
+        </style>
+</resources>
